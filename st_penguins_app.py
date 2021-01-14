@@ -40,7 +40,7 @@ else:
     input_df = user_input_features()
 
 
-df = pd.read_csv(r'D:\GregoryishGithub\data\penguins_cleaned.csv')
+df = pd.read_csv(r'penguins_cleaned.csv')
 targets = df['species'].unique()
 dict_target = dict(zip([1, 2, 3], targets))
 df = df.drop('species', axis=1)
